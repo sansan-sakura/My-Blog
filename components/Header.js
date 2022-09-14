@@ -23,6 +23,7 @@ export default function Header() {
             href="mailto:neko-germany@gmail.com"
             className={style.nav_link}
             target="_blank"
+            rel="noreferrer"
           >
             <li className={style.nav_list}>Contact</li>
           </a>
