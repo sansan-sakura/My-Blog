@@ -29,6 +29,8 @@ function MyApp({ Component, pageProps }) {
         <link rel="manifest" href="/site.webmanifest" />
       </Head>
 
+      <Header />
+
       <main className="main">
         <Aside />
 
