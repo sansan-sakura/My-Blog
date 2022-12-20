@@ -1,6 +1,6 @@
 import style from "../styles/About.module.css";
 import Image from "next/image";
-import myImage from "../assets/myImage.jpeg";
+import myImage from "../assets/myImage.jpg";
 
 export default function About() {
   return (
@@ -12,7 +12,6 @@ export default function About() {
         // layout="responsive"
         objectFit="cover"
         height="1000px"
-        objectPosition="0 -280px"
       />
 
       <h2 className={style.title}>------ About Me ------</h2>

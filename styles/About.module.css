@@ -1,17 +1,21 @@
 .container {
   padding: 50px;
+  position: relatve;
 }
 
 .title {
   text-align: center;
   margin-top: 50px;
-  font-size: 70px;
+  font-size: 60px;
   color: #115e59;
   font-family: "Dancing Script", sans-serif;
 }
 
 .about_image {
-  /* border-radius: 5000px; */
+  z-index: -1;
+  width: 100%;
+
+  object-position: bottom left;
 }
 
 .text {
@@ -19,4 +23,31 @@
   padding: 50px 30px;
   line-height: 2;
   background-color: rgb(243, 242, 242);
+}
+
+@media (max-width: 1000px) {
+  .title {
+    font-size: 40px;
+  }
+
+  .text {
+    line-height: 1.8;
+    font-size: inherit;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    padding: 20px;
+  }
+  .title {
+    font-size: 25px;
+    margin-top: 20px;
+  }
+
+  .text {
+    line-height: 1.6;
+    font-size: inherit;
+    padding: 30px 20px;
+  }
 }

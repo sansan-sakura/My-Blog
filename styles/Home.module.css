@@ -1,6 +1,16 @@
 .main_article {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, 1fr);
   gap: 40px;
+}
+
+.main_container {
+  max-height: fit-content;
+}
+
+@media (max-width: 900px) {
+  .main_article {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }
