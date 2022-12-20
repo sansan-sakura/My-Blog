@@ -1,12 +1,18 @@
 import Image from "next/image";
-import myImage from "../assets/neko.jpg";
+
 import style from "../styles/Aside.module.css";
 
 export default function Aside() {
   return (
     <aside className={style.aside}>
       <div className={style.aside_about}>
-        <Image src={myImage} alt="" className={style.aside_about_img} />
+        <Image
+          src="/neko.jpg"
+          alt=""
+          className={style.aside_about_img}
+          height="200"
+          width="300"
+        />
         <div className={style.aside_about_text}>
           Sakuraです。ドイツのフランス国境沿いの小さな街に子供ふたりと夫と4人で暮らしています。
           自然が好きでアウトドア派ですが、インドアのアクティビティーもすごく好きです。

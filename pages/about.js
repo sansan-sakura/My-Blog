@@ -1,12 +1,11 @@
 import style from "../styles/About.module.css";
 import Image from "next/image";
-import myImage from "../assets/myImage.jpg";
 
 export default function About() {
   return (
     <div className={style.container}>
       <Image
-        src={myImage}
+        src="/myImage.jpg"
         alt=""
         className={style.about_image}
         // layout="responsive"
